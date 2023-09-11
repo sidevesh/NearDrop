@@ -84,7 +84,7 @@ class NearbyConnectionManager : NSObject, NetServiceDelegate, InboundNearbyConne
 	
 	func obtainUserConsent(for transfer: TransferMetadata, from device: RemoteDeviceInfo, connection: InboundNearbyConnection) {
 		let notificationContent=UNMutableNotificationContent()
-		notificationContent.title="NearDrop"
+		notificationContent.title="Nearby Share"
 		notificationContent.subtitle=String(format:NSLocalizedString("PinCode", value: "PIN: %@", comment: ""), arguments: [connection.pinCode!])
 		let fileStr:String
 		if transfer.files.count==1{
@@ -131,4 +131,3 @@ class NearbyConnectionManager : NSObject, NetServiceDelegate, InboundNearbyConne
 		completionHandler()
 	}
 }
-

@@ -1,5 +1,7 @@
 **NearDrop** is a partial implementation of [Google's Nearby Share](https://blog.google/products/android/nearby-share/) for macOS.
 
+This fork just renames the app to `Nearby Share` to match with the name of the feature on Android and the official Windows app.
+
 [Protocol documentation](/PROTOCOL.md) is available separately.
 
 The app lives in your menu bar and saves files to your downloads folder. It's that simple, really.
